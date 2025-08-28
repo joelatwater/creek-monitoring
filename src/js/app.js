@@ -16,6 +16,7 @@ class SidebarManager {
         
         this.currentStation = null;
         this.data = null;
+        this.selectedAnalytes = new Set(['Temperature']); // Global selection persistence
 
         this.setupEventListeners();
     }
@@ -132,8 +133,8 @@ class SidebarManager {
         analytes.forEach(analyte => {
             const unit = this.data.analyteRanges?.[analyte]?.unit || '';
             const unitText = unit ? ` (${unit})` : '';
-            const isTemperature = analyte === 'Temperature';
-            const checkedAttribute = isTemperature ? 'checked' : '';
+            const isSelected = this.selectedAnalytes.has(analyte);
+            const checkedAttribute = isSelected ? 'checked' : '';
             
             checkboxHtml += `
                 <div class="checkbox-item">
@@ -162,14 +163,22 @@ class SidebarManager {
         this.chartControls.style.display = 'block';
         this.chartContainer.style.display = 'block';
 
-        // Initialize chart with this station and Temperature pre-selected
+        // Initialize chart with this station and currently selected analytes
         if (window.chartManager) {
-            const defaultAnalytes = analytes.includes('Temperature') ? ['Temperature'] : [];
-            window.chartManager.showStation(stationCode, defaultAnalytes);
+            const selectedForStation = analytes.filter(analyte => this.selectedAnalytes.has(analyte));
+            window.chartManager.showStation(stationCode, selectedForStation);
         }
     }
 
     toggleAnalyteChart(analyte, visible) {
+        // Update global selection
+        if (visible) {
+            this.selectedAnalytes.add(analyte);
+        } else {
+            this.selectedAnalytes.delete(analyte);
+        }
+        
+        // Update chart
         if (window.chartManager) {
             window.chartManager.toggleAnalyte(analyte, visible);
         }

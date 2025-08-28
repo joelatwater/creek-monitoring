@@ -121,9 +121,9 @@ class ChartManager {
                 },
                 elements: {
                     point: {
-                        radius: 3,
-                        hoverRadius: 6,
-                        borderWidth: 2
+                        radius: 1,
+                        hoverRadius: 2,
+                        borderWidth: 1
                     },
                     line: {
                         borderWidth: 2,
@@ -223,10 +223,10 @@ class ChartManager {
         // Update y-axis title based on visible analytes
         this.updateYAxisTitle();
 
-        // Update the chart
-        this.chart.update('active');
+        // Update the chart without animation for immediate response
+        this.chart.update('none');
 
-        // Fit axes to data
+        // Always fit axes to current data after any change
         this.fitAxesToData();
     }
 
@@ -301,24 +301,37 @@ class ChartManager {
      * Fit chart axes to the current data
      */
     fitAxesToData() {
-        if (!this.chart.data.datasets.length) return;
+        if (!this.chart.data.datasets.length) {
+            // Reset scales if no data
+            this.chart.options.scales.y.min = undefined;
+            this.chart.options.scales.y.max = undefined;
+            this.chart.update();
+            return;
+        }
 
-        // Get all data points
+        // Get all data points from visible datasets
         const allValues = [];
         this.chart.data.datasets.forEach(dataset => {
             dataset.data.forEach(point => allValues.push(point.y));
         });
 
-        if (allValues.length === 0) return;
+        if (allValues.length === 0) {
+            // Reset if no actual data points
+            this.chart.options.scales.y.min = undefined;
+            this.chart.options.scales.y.max = undefined;
+        } else {
+            const min = Math.min(...allValues);
+            const max = Math.max(...allValues);
+            const range = max - min;
+            const padding = range > 0 ? range * 0.1 : Math.abs(min * 0.1) || 1; // 10% padding
 
-        const min = Math.min(...allValues);
-        const max = Math.max(...allValues);
-        const range = max - min;
-        const padding = range * 0.1; // 10% padding
-
-        // Update y-axis range
-        this.chart.options.scales.y.min = Math.max(0, min - padding);
-        this.chart.options.scales.y.max = max + padding;
+            // Update y-axis range with padding
+            this.chart.options.scales.y.min = Math.max(0, min - padding);
+            this.chart.options.scales.y.max = max + padding;
+        }
+        
+        // Apply the scale changes immediately
+        this.chart.update();
     }
 
     /**
@@ -333,6 +346,7 @@ class ChartManager {
             this.visibleAnalytes.delete(analyte);
         }
         
+        // Update chart and rescale immediately
         this.updateChart();
     }
 
@@ -342,6 +356,7 @@ class ChartManager {
      */
     setVisibleAnalytes(analytes) {
         this.visibleAnalytes = new Set(analytes);
+        // Update chart and rescale when changing analyte set
         this.updateChart();
     }
 
