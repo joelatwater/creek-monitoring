@@ -1,0 +1,38 @@
+{
+  "SRA190": {
+    "lon": -121.9883528,
+    "lat": 37.7714199,
+    "name": "Station SRA190",
+    "description": "Creek monitoring station SRA190"
+  },
+  "SRA161": {
+    "lon": -121.981522,
+    "lat": 37.811637,
+    "name": "Station SRA161",
+    "description": "Creek monitoring station SRA161"
+  },
+  "SRA160": {
+    "lon": -121.9852663,
+    "lat": 37.8122981,
+    "name": "Station SRA160",
+    "description": "Creek monitoring station SRA160"
+  },
+  "SRA141": {
+    "lon": -121.9976948,
+    "lat": 37.8238159,
+    "name": "Station SRA141",
+    "description": "Creek monitoring station SRA141"
+  },
+  "SRA120": {
+    "lon": -122.0205907,
+    "lat": 37.8407117,
+    "name": "Station SRA120",
+    "description": "Creek monitoring station SRA120"
+  },
+  "SRA100": {
+    "lon": -122.0391426,
+    "lat": 37.8647308,
+    "name": "Station SRA100",
+    "description": "Creek monitoring station SRA100"
+  }
+}

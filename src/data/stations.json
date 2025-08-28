@@ -1,0 +1,92 @@
+{
+  "SRA190": {
+    "code": "SRA190",
+    "name": "Station SRA190",
+    "longitude": -121.9883528,
+    "latitude": 37.7714199,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 252
+  },
+  "SRA161": {
+    "code": "SRA161",
+    "name": "Station SRA161",
+    "longitude": -121.981522,
+    "latitude": 37.811637,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 253
+  },
+  "SRA160": {
+    "code": "SRA160",
+    "name": "Station SRA160",
+    "longitude": -121.9852663,
+    "latitude": 37.8122981,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 253
+  },
+  "SRA141": {
+    "code": "SRA141",
+    "name": "Station SRA141",
+    "longitude": -121.9976948,
+    "latitude": 37.8238159,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 253
+  },
+  "SRA120": {
+    "code": "SRA120",
+    "name": "Station SRA120",
+    "longitude": -122.0205907,
+    "latitude": 37.8407117,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 253
+  },
+  "SRA100": {
+    "code": "SRA100",
+    "name": "Station SRA100",
+    "longitude": -122.0391426,
+    "latitude": 37.8647308,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 477
+  }
+}

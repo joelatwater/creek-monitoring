@@ -1,0 +1,230 @@
+{
+  "SRA100": {
+    "Dissolved Oxygen": {
+      "value": 11.35,
+      "date": "2024-12-20T18:57:00Z",
+      "status": "acceptable",
+      "unit": "mg/L"
+    },
+    "pH": {
+      "value": 7.7,
+      "date": "2024-10-31T18:08:00Z",
+      "status": "acceptable",
+      "unit": null
+    },
+    "Specific Conductivity": {
+      "value": 638.0,
+      "date": "2024-12-20T18:57:00Z",
+      "status": "outside_range",
+      "unit": "uS/cm"
+    },
+    "Temperature": {
+      "value": 9.5,
+      "date": "2024-12-20T18:57:00Z",
+      "status": "acceptable",
+      "unit": "Deg C"
+    },
+    "Turbidity": {
+      "value": 3.92,
+      "date": "2024-12-20T18:57:00Z",
+      "status": "acceptable",
+      "unit": "NTU"
+    },
+    "Nitrate": {
+      "value": 0.11,
+      "date": "2024-12-20T18:57:00Z",
+      "status": "acceptable",
+      "unit": "mg/L"
+    }
+  },
+  "SRA120": {
+    "Dissolved Oxygen": {
+      "value": 11.15,
+      "date": "2024-12-20T18:36:00Z",
+      "status": "acceptable",
+      "unit": "mg/L"
+    },
+    "pH": {
+      "value": 7.6,
+      "date": "2024-10-31T17:43:00Z",
+      "status": "acceptable",
+      "unit": null
+    },
+    "Specific Conductivity": {
+      "value": 804.0,
+      "date": "2024-12-20T18:36:00Z",
+      "status": "outside_range",
+      "unit": "uS/cm"
+    },
+    "Temperature": {
+      "value": 9.4,
+      "date": "2024-12-20T18:36:00Z",
+      "status": "acceptable",
+      "unit": "Deg C"
+    },
+    "Nitrate": {
+      "value": 0.1,
+      "date": "2024-12-20T18:36:00Z",
+      "status": "acceptable",
+      "unit": "mg/L"
+    },
+    "Turbidity": {
+      "value": 1.58,
+      "date": "2024-12-20T18:36:00Z",
+      "status": "acceptable",
+      "unit": "NTU"
+    }
+  },
+  "SRA141": {
+    "Dissolved Oxygen": {
+      "value": 10.09,
+      "date": "2024-12-20T18:15:00Z",
+      "status": "acceptable",
+      "unit": "mg/L"
+    },
+    "pH": {
+      "value": 7.6,
+      "date": "2024-10-31T17:17:00Z",
+      "status": "acceptable",
+      "unit": null
+    },
+    "Specific Conductivity": {
+      "value": 988.0,
+      "date": "2024-12-20T18:15:00Z",
+      "status": "outside_range",
+      "unit": "uS/cm"
+    },
+    "Temperature": {
+      "value": 9.1,
+      "date": "2024-12-20T18:15:00Z",
+      "status": "acceptable",
+      "unit": "Deg C"
+    },
+    "Nitrate": {
+      "value": 0.16,
+      "date": "2024-12-20T18:15:00Z",
+      "status": "acceptable",
+      "unit": "mg/L"
+    },
+    "Turbidity": {
+      "value": 1.86,
+      "date": "2024-12-20T18:15:00Z",
+      "status": "acceptable",
+      "unit": "NTU"
+    }
+  },
+  "SRA160": {
+    "Dissolved Oxygen": {
+      "value": 10.05,
+      "date": "2024-12-20T17:50:00Z",
+      "status": "acceptable",
+      "unit": "mg/L"
+    },
+    "pH": {
+      "value": 7.6,
+      "date": "2024-10-31T16:55:00Z",
+      "status": "acceptable",
+      "unit": null
+    },
+    "Specific Conductivity": {
+      "value": 903.0,
+      "date": "2024-12-20T17:50:00Z",
+      "status": "outside_range",
+      "unit": "uS/cm"
+    },
+    "Temperature": {
+      "value": 9.1,
+      "date": "2024-12-20T17:50:00Z",
+      "status": "acceptable",
+      "unit": "Deg C"
+    },
+    "Nitrate": {
+      "value": 0.18,
+      "date": "2024-12-20T17:50:00Z",
+      "status": "acceptable",
+      "unit": "mg/L"
+    },
+    "Turbidity": {
+      "value": 0.75,
+      "date": "2024-12-20T17:50:00Z",
+      "status": "acceptable",
+      "unit": "NTU"
+    }
+  },
+  "SRA161": {
+    "Dissolved Oxygen": {
+      "value": 10.64,
+      "date": "2024-12-20T17:40:00Z",
+      "status": "acceptable",
+      "unit": "mg/L"
+    },
+    "pH": {
+      "value": 7.6,
+      "date": "2024-10-31T16:37:00Z",
+      "status": "acceptable",
+      "unit": null
+    },
+    "Specific Conductivity": {
+      "value": 818.0,
+      "date": "2024-12-20T17:40:00Z",
+      "status": "outside_range",
+      "unit": "uS/cm"
+    },
+    "Temperature": {
+      "value": 9.0,
+      "date": "2024-12-20T17:40:00Z",
+      "status": "acceptable",
+      "unit": "Deg C"
+    },
+    "Nitrate": {
+      "value": 0.35,
+      "date": "2024-12-20T17:40:00Z",
+      "status": "acceptable",
+      "unit": "mg/L"
+    },
+    "Turbidity": {
+      "value": 1.13,
+      "date": "2024-12-20T17:40:00Z",
+      "status": "acceptable",
+      "unit": "NTU"
+    }
+  },
+  "SRA190": {
+    "Dissolved Oxygen": {
+      "value": 11.3,
+      "date": "2024-12-20T17:14:00Z",
+      "status": "acceptable",
+      "unit": "mg/L"
+    },
+    "pH": {
+      "value": 7.4,
+      "date": "2024-10-31T16:16:00Z",
+      "status": "acceptable",
+      "unit": null
+    },
+    "Specific Conductivity": {
+      "value": 790.0,
+      "date": "2024-12-20T17:14:00Z",
+      "status": "outside_range",
+      "unit": "uS/cm"
+    },
+    "Temperature": {
+      "value": 8.3,
+      "date": "2024-12-20T17:14:00Z",
+      "status": "acceptable",
+      "unit": "Deg C"
+    },
+    "Nitrate": {
+      "value": 0.61,
+      "date": "2024-12-20T17:14:00Z",
+      "status": "acceptable",
+      "unit": "mg/L"
+    },
+    "Turbidity": {
+      "value": 0.04,
+      "date": "2024-12-20T17:14:00Z",
+      "status": "acceptable",
+      "unit": "NTU"
+    }
+  }
+}

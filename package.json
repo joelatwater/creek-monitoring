@@ -1,0 +1,19 @@
+{
+  "name": "creek-monitoring",
+  "version": "1.0.0",
+  "description": "Creek water quality monitoring visualization application",
+  "main": "src/index.html",
+  "scripts": {
+    "serve": "python3 -m http.server 8000 --directory src",
+    "process-data": "python3 scripts/process_data.py"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": ["water-quality", "monitoring", "visualization", "creek", "environmental"],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/creek-monitoring.git"
+  }
+}

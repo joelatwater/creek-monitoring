@@ -1,0 +1,68 @@
+{
+  "Dissolved Oxygen": {
+    "min": 5,
+    "max": null,
+    "unit": "mg/L",
+    "description": "Minimum dissolved oxygen level required for aquatic life",
+    "color_scheme": {
+      "acceptable": "#28a745",
+      "outside_range": "#dc3545",
+      "no_range": "#007bff"
+    }
+  },
+  "pH": {
+    "min": 6.5,
+    "max": 8.5,
+    "unit": null,
+    "description": "Acceptable pH range for creek water quality",
+    "color_scheme": {
+      "acceptable": "#28a745",
+      "outside_range": "#dc3545",
+      "no_range": "#007bff"
+    }
+  },
+  "Specific Conductivity": {
+    "min": 150,
+    "max": 500,
+    "unit": "uS/cm",
+    "description": "Acceptable specific conductivity range indicating proper dissolved solids levels",
+    "color_scheme": {
+      "acceptable": "#28a745",
+      "outside_range": "#dc3545",
+      "no_range": "#007bff"
+    }
+  },
+  "Temperature": {
+    "min": null,
+    "max": 24,
+    "unit": "Deg C",
+    "description": "Maximum temperature for maintaining creek ecosystem health",
+    "color_scheme": {
+      "acceptable": "#28a745",
+      "outside_range": "#dc3545",
+      "no_range": "#007bff"
+    }
+  },
+  "Turbidity": {
+    "min": null,
+    "max": 25,
+    "unit": "NTU",
+    "description": "Maximum turbidity level for acceptable water clarity",
+    "color_scheme": {
+      "acceptable": "#28a745",
+      "outside_range": "#dc3545",
+      "no_range": "#007bff"
+    }
+  },
+  "Nitrate": {
+    "min": null,
+    "max": 45,
+    "unit": "mg/L",
+    "description": "Maximum nitrate level to prevent eutrophication",
+    "color_scheme": {
+      "acceptable": "#28a745",
+      "outside_range": "#dc3545",
+      "no_range": "#007bff"
+    }
+  }
+}
