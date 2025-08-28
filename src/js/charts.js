@@ -263,6 +263,9 @@ class ChartManager {
             pointBorderColor: '#ffffff',
             pointHoverBackgroundColor: color,
             pointHoverBorderColor: '#ffffff',
+            pointRadius: 1,           // Small markers always
+            pointHoverRadius: 2,      // Small hover state
+            pointBorderWidth: 1,      // Thin border
             unit: unit,
             acceptableRange: acceptableRange,
             fill: false,
