@@ -88,5 +88,455 @@
       "pH"
     ],
     "measurement_count": 477
+  },
+  "SPA103": {
+    "code": "SPA103",
+    "name": "Station SPA103",
+    "longitude": -122.310207,
+    "latitude": 37.966664,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 397
+  },
+  "SPA108": {
+    "code": "SPA108",
+    "name": "Station SPA108",
+    "longitude": -122.302114,
+    "latitude": 37.972438,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 361
+  },
+  "SPA110": {
+    "code": "SPA110",
+    "name": "Station SPA110",
+    "longitude": -122.290488,
+    "latitude": 37.968819,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 371
+  },
+  "SPA180": {
+    "code": "SPA180",
+    "name": "Station SPA180",
+    "longitude": -122.20238,
+    "latitude": 37.89389,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 383
+  },
+  "SPA200": {
+    "code": "SPA200",
+    "name": "Station SPA200",
+    "longitude": -122.19348,
+    "latitude": 37.8927,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 301
+  },
+  "SPA230": {
+    "code": "SPA230",
+    "name": "Station SPA230",
+    "longitude": -122.18115,
+    "latitude": 37.87907,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 378
+  },
+  "SPA250": {
+    "code": "SPA250",
+    "name": "Station SPA250",
+    "longitude": -122.17415,
+    "latitude": 37.86557,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 346
+  },
+  "CEO166": {
+    "code": "CEO166",
+    "name": "Station CEO166",
+    "longitude": -122.066134,
+    "latitude": 37.971994,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 386
+  },
+  "WAL031": {
+    "code": "WAL031",
+    "name": "Station WAL031",
+    "longitude": -122.05214,
+    "latitude": 37.97685,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 272
+  },
+  "CEO160": {
+    "code": "CEO160",
+    "name": "Station CEO160",
+    "longitude": -122.065799,
+    "latitude": 37.975236,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 407
+  },
+  "CEO170": {
+    "code": "CEO170",
+    "name": "Station CEO170",
+    "longitude": -122.065184,
+    "latitude": 37.938396,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 407
+  },
+  "SPA260": {
+    "code": "SPA260",
+    "name": "Station SPA260",
+    "longitude": -122.16773,
+    "latitude": 37.86399,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 397
+  },
+  "MSH090": {
+    "code": "MSH090",
+    "name": "Station MSH090",
+    "longitude": -121.80266,
+    "latitude": 37.89041,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 162
+  },
+  "MSH100": {
+    "code": "MSH100",
+    "name": "Station MSH100",
+    "longitude": -121.82498,
+    "latitude": 37.88409,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 188
+  },
+  "MSH110": {
+    "code": "MSH110",
+    "name": "Station MSH110",
+    "longitude": -121.84901,
+    "latitude": 37.8904,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 207
+  },
+  "MSH120": {
+    "code": "MSH120",
+    "name": "Station MSH120",
+    "longitude": -121.85461,
+    "latitude": 37.89272,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 256
+  },
+  "MSH140": {
+    "code": "MSH140",
+    "name": "Station MSH140",
+    "longitude": -121.88184,
+    "latitude": 37.866692,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 144
+  },
+  "SPA129": {
+    "code": "SPA129",
+    "name": "Station SPA129",
+    "longitude": -122.27021,
+    "latitude": 37.95559,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 337
+  },
+  "WIL040": {
+    "code": "WIL040",
+    "name": "Station WIL040",
+    "longitude": -122.36312,
+    "latitude": 37.96077,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 118
+  },
+  "WIL050": {
+    "code": "WIL050",
+    "name": "Station WIL050",
+    "longitude": -122.350965,
+    "latitude": 37.962128,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 144
+  },
+  "WAL030": {
+    "code": "WAL030",
+    "name": "Station WAL030",
+    "longitude": -122.05262,
+    "latitude": 37.9769,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 171
+  },
+  "SUP030": {
+    "code": "SUP030",
+    "name": "Station SUP030",
+    "longitude": -122.34352,
+    "latitude": 37.97235,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 254
+  },
+  "ALH110": {
+    "code": "ALH110",
+    "name": "Station ALH110",
+    "longitude": -122.1302,
+    "latitude": 37.9998,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 242
+  },
+  "WIL070": {
+    "code": "WIL070",
+    "name": "Station WIL070",
+    "longitude": -122.319405,
+    "latitude": 37.951974,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 304
+  },
+  "PIN020": {
+    "code": "PIN020",
+    "name": "Station PIN020",
+    "longitude": -122.28833,
+    "latitude": 38.00417,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 206
+  },
+  "PIN040": {
+    "code": "PIN040",
+    "name": "Station PIN040",
+    "longitude": -122.28833,
+    "latitude": 37.99917,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 211
+  },
+  "SPA210": {
+    "code": "SPA210",
+    "name": "Station SPA210",
+    "longitude": -122.1894,
+    "latitude": 37.90417,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 397
+  },
+  "SPA231": {
+    "code": "SPA231",
+    "name": "Station SPA231",
+    "longitude": -122.18115,
+    "latitude": 37.87907,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 397
+  },
+  "WIL060": {
+    "code": "WIL060",
+    "name": "Station WIL060",
+    "longitude": -122.33863,
+    "latitude": 37.95325,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 159
+  },
+  "WAL080": {
+    "code": "WAL080",
+    "name": "Station WAL080",
+    "longitude": -122.05927,
+    "latitude": 37.903903,
+    "analytes": [
+      "Dissolved Oxygen",
+      "Nitrate",
+      "Specific Conductivity",
+      "Temperature",
+      "Turbidity",
+      "pH"
+    ],
+    "measurement_count": 407
   }
 }

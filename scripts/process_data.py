@@ -16,15 +16,40 @@ from datetime import datetime
 from pathlib import Path
 import pytz
 
-# Station coordinates (from concept.md)
-STATION_COORDINATES = {
-    "SRA190": {"lon": -121.9883528, "lat": 37.7714199},
-    "SRA161": {"lon": -121.981522, "lat": 37.811637},
-    "SRA160": {"lon": -121.9852663, "lat": 37.8122981},
-    "SRA141": {"lon": -121.9976948, "lat": 37.8238159},
-    "SRA120": {"lon": -122.0205907, "lat": 37.8407117},
-    "SRA100": {"lon": -122.0391426, "lat": 37.8647308}
-}
+# Load station coordinates from JSON file
+def load_station_coordinates():
+    """Load station coordinates from the JSON mapping file."""
+    coordinates_file = Path(__file__).parent.parent / 'data' / 'mappings' / 'station_coordinates.json'
+    
+    try:
+        with open(coordinates_file, 'r') as f:
+            station_data = json.load(f)
+        
+        # Convert to the format expected by the processing code
+        coordinates = {}
+        for station_code, station_info in station_data.items():
+            coordinates[station_code] = {
+                "lon": station_info["lon"],
+                "lat": station_info["lat"]
+            }
+        
+        print(f"Loaded {len(coordinates)} station coordinates from {coordinates_file}")
+        return coordinates
+    
+    except Exception as e:
+        print(f"Error loading station coordinates: {e}")
+        # Fallback to original 6 stations if JSON loading fails
+        return {
+            "SRA190": {"lon": -121.9883528, "lat": 37.7714199},
+            "SRA161": {"lon": -121.981522, "lat": 37.811637},
+            "SRA160": {"lon": -121.9852663, "lat": 37.8122981},
+            "SRA141": {"lon": -121.9976948, "lat": 37.8238159},
+            "SRA120": {"lon": -122.0205907, "lat": 37.8407117},
+            "SRA100": {"lon": -122.0391426, "lat": 37.8647308}
+        }
+
+# Load station coordinates
+STATION_COORDINATES = load_station_coordinates()
 
 # Analyte name mappings (handle variations)
 ANALYTE_MAPPINGS = {
@@ -66,8 +91,16 @@ def combine_date_time_pacific(sample_date, collection_time):
         # If no collection time, use midnight Pacific
         naive_datetime = pd.Timestamp.combine(sample_date.date(), pd.Timestamp('00:00:00').time())
     else:
+        # Handle both time and datetime objects
+        if hasattr(collection_time, 'time'):
+            # It's a datetime, extract time component
+            time_part = collection_time.time()
+        else:
+            # It's already a time object
+            time_part = collection_time
+        
         # Combine date and time
-        naive_datetime = pd.Timestamp.combine(sample_date.date(), collection_time)
+        naive_datetime = pd.Timestamp.combine(sample_date.date(), time_part)
     
     # Localize to Pacific timezone (handles DST automatically)
     pacific_datetime = pacific_tz.localize(naive_datetime)

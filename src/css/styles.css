@@ -2,19 +2,27 @@
 
 /* CSS Variables for theming */
 :root {
-    --primary-color: #2c5530;
-    --secondary-color: #4a7c59;
-    --accent-color: #6ba368;
-    --acceptable-color: #28a745;
-    --outside-range-color: #dc3545;
-    --no-range-color: #007bff;
-    --background-color: #f8f9fa;
-    --text-color: #333;
-    --border-color: #dee2e6;
-    --shadow-color: rgba(0, 0, 0, 0.1);
+    --primary-color: #10b981;
+    --primary-dark: #059669;
+    --secondary-color: #f8fafc;
+    --accent-color: #0d9488;
+    --acceptable-color: #10b981;
+    --outside-range-color: #ef4444;
+    --no-range-color: #3b82f6;
+    --background-color: #f8fafc;
+    --surface-color: #ffffff;
+    --text-color: #1e293b;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --sidebar-width: 400px;
     --header-height: 80px;
     --footer-height: 60px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
 }
 
 /* Reset and base styles */
@@ -41,12 +49,13 @@ body {
 
 /* Header */
 .app-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
+    background: var(--surface-color);
+    color: var(--text-color);
     height: var(--header-height);
-    box-shadow: 0 2px 4px var(--shadow-color);
+    box-shadow: var(--shadow-md);
     z-index: 1000;
     position: relative;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .header-content {
@@ -61,8 +70,9 @@ body {
 
 .app-title {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
+    color: var(--primary-color);
 }
 
 .controls {
@@ -83,19 +93,22 @@ body {
 }
 
 .analyte-selector select {
-    padding: 6px 12px;
-    border: none;
-    border-radius: 4px;
-    background: white;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background: var(--surface-color);
     color: var(--text-color);
     font-size: 14px;
     min-width: 180px;
     cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .analyte-selector select:focus {
-    outline: 2px solid var(--accent-color);
-    outline-offset: 2px;
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
 }
 
 /* Legend */
@@ -183,13 +196,14 @@ body {
 /* Sidebar */
 .sidebar {
     width: var(--sidebar-width);
-    background: white;
+    background: var(--surface-color);
     border-left: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
     transform: translateX(100%);
     position: relative;
     z-index: 900;
+    box-shadow: var(--shadow-lg);
 }
 
 .sidebar.open {
@@ -202,13 +216,14 @@ body {
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid var(--border-color);
-    background: var(--background-color);
+    background: var(--surface-color);
 }
 
 .sidebar-header h2 {
-    font-size: 1.3rem;
-    color: var(--primary-color);
+    font-size: 1.25rem;
+    color: var(--text-color);
     margin: 0;
+    font-weight: 600;
 }
 
 .sidebar-close {
@@ -234,38 +249,42 @@ body {
 
 /* Station info */
 .station-info {
-    margin-bottom: 15px;
+    margin-bottom: 24px;
 }
 
 .station-info h3 {
-    color: var(--primary-color);
-    margin-bottom: 6px;
-    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .station-info p {
-    margin-bottom: 4px;
-    color: #666;
+    margin-bottom: 6px;
+    color: var(--text-secondary);
     font-size: 14px;
+    line-height: 1.5;
 }
 
 .station-coordinates {
     font-family: monospace;
-    background: #f8f9fa;
+    background: var(--background-color);
     padding: 8px 12px;
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
     font-size: 13px;
+    border: 1px solid var(--border-color);
 }
 
 /* Chart controls */
 .chart-controls h3,
 .current-values h3,
 .chart-container h3 {
-    color: var(--primary-color);
+    color: var(--text-color);
     font-size: 1rem;
-    margin-bottom: 8px;
-    border-bottom: 1px solid var(--accent-color);
-    padding-bottom: 3px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .analyte-checkboxes {
@@ -312,7 +331,7 @@ body {
 }
 
 .chart-container canvas {
-    max-height: 250px;
+    max-height: 300px;
 }
 
 /* Current values */
@@ -326,10 +345,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
-    background: #f8f9fa;
-    border-radius: 4px;
-    border-left: 3px solid transparent;
+    padding: 12px;
+    background: var(--background-color);
+    border-radius: var(--radius-md);
+    border-left: 4px solid transparent;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .value-item.acceptable {
@@ -394,22 +415,36 @@ body {
 
 /* Footer */
 .app-footer {
-    background: var(--primary-color);
-    color: white;
+    background: var(--surface-color);
+    color: var(--text-secondary);
     padding: 15px 20px;
     text-align: center;
     height: var(--footer-height);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-top: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
 }
 
 .app-footer p {
     margin: 2px 0;
 }
 
+.app-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.app-footer a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
 .data-disclaimer {
-    opacity: 0.8;
+    opacity: 0.9;
     font-size: 12px;
 }
 
@@ -583,6 +618,85 @@ body {
     }
 }
 
+/* Map popup styling */
+.leaflet-popup-content-wrapper {
+    border-radius: var(--radius-lg) !important;
+    box-shadow: var(--shadow-lg) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+.leaflet-popup-content {
+    margin: 16px !important;
+    color: var(--text-color) !important;
+    font-family: inherit !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+}
+
+.station-popup h4 {
+    color: var(--text-color) !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    margin: 0 0 12px 0 !important;
+    padding-bottom: 8px !important;
+    border-bottom: 2px solid var(--primary-color) !important;
+}
+
+.station-popup p {
+    margin: 6px 0 !important;
+    color: var(--text-secondary) !important;
+}
+
+.current-measurement {
+    background: var(--background-color) !important;
+    padding: 12px !important;
+    border-radius: var(--radius-md) !important;
+    margin: 12px 0 !important;
+    border-left: 4px solid var(--primary-color) !important;
+}
+
+.value-display {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    color: var(--text-color) !important;
+}
+
+.value-display.acceptable {
+    color: var(--acceptable-color) !important;
+}
+
+.value-display.outside-range {
+    color: var(--outside-range-color) !important;
+}
+
+.value-display.no-range {
+    color: var(--no-range-color) !important;
+}
+
+.status {
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    opacity: 0.8 !important;
+}
+
+.measurement-date {
+    font-size: 12px !important;
+    color: var(--text-secondary) !important;
+    font-style: italic !important;
+}
+
+.click-hint {
+    font-size: 12px !important;
+    color: var(--text-secondary) !important;
+    margin-top: 8px !important;
+    font-style: italic !important;
+}
+
+.no-data {
+    color: var(--text-secondary) !important;
+    font-style: italic !important;
+}
+
 /* High contrast mode */
 @media (prefers-contrast: high) {
     :root {
@@ -590,7 +704,7 @@ body {
         --outside-range-color: #8b0000;
         --no-range-color: #000080;
         --border-color: #000;
-        --shadow-color: rgba(0, 0, 0, 0.5);
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
     }
     
     .legend-color {

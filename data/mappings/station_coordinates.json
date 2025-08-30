@@ -34,5 +34,185 @@
     "lat": 37.8647308,
     "name": "Station SRA100",
     "description": "Creek monitoring station SRA100"
+  },
+  "SPA103": {
+    "lat": 37.966664,
+    "lon": -122.310207,
+    "name": "San Pablo Creek 300 feet downstream of Appian Ave bridge",
+    "description": "Creek monitoring station SPA103"
+  },
+  "SPA108": {
+    "lat": 37.972438,
+    "lon": -122.302114,
+    "name": "Appian Creek behind Boys and Girls Club",
+    "description": "Creek monitoring station SPA108"
+  },
+  "SPA110": {
+    "lat": 37.968819,
+    "lon": -122.290488,
+    "name": "Wilkie Creek 25 feet upstream of De Anza Street Bridge",
+    "description": "Creek monitoring station SPA110"
+  },
+  "SPA180": {
+    "lat": 37.89389,
+    "lon": -122.20238,
+    "name": "San Pablo Creek at Manzanita Rd Bridge",
+    "description": "Creek monitoring station SPA180"
+  },
+  "SPA200": {
+    "lat": 37.8927,
+    "lon": -122.19348,
+    "name": "Lauterwasser Creek at Bien Venida",
+    "description": "Creek monitoring station SPA200"
+  },
+  "SPA230": {
+    "lat": 37.87907,
+    "lon": -122.18115,
+    "name": "San Pablo Creek tributary behind Brookwood Rd and Moraga Way",
+    "description": "Creek monitoring station SPA230"
+  },
+  "SPA250": {
+    "lat": 37.86557,
+    "lon": -122.17415,
+    "name": "San Pablo Creek at Brookside Rd and Moraga Way",
+    "description": "Creek monitoring station SPA250"
+  },
+  "CEO166": {
+    "lat": 37.971994,
+    "lon": -122.066134,
+    "name": "Grayson Creek downstream of Golf Club Rd",
+    "description": "Creek monitoring station CEO166"
+  },
+  "WAL031": {
+    "lat": 37.97685,
+    "lon": -122.05214,
+    "name": "Pine Creek at Six Flags Hurricane Harbor",
+    "description": "Creek monitoring station WAL031"
+  },
+  "CEO160": {
+    "lat": 37.975236,
+    "lon": -122.065799,
+    "name": "Grayson Creek upstream of Chilpancingo Parkway",
+    "description": "Creek monitoring station CEO160"
+  },
+  "CEO170": {
+    "lat": 37.938396,
+    "lon": -122.065184,
+    "name": "Grayson Creek behind Pleasant Hill Middle School",
+    "description": "Creek monitoring station CEO170"
+  },
+  "SPA260": {
+    "lat": 37.86399,
+    "lon": -122.16773,
+    "name": "San Pablo Creek at Orchard Rd and Glorietta Blvd",
+    "description": "Creek monitoring station SPA260"
+  },
+  "MSH090": {
+    "lat": 37.89041,
+    "lon": -121.80266,
+    "name": "Marsh Creek at 16000 Marsh Creek Road, Clayton, CA 94517",
+    "description": "Creek monitoring station MSH090"
+  },
+  "MSH100": {
+    "lat": 37.88409,
+    "lon": -121.82498,
+    "name": "Marsh Creek at 14350 Marsh Creek Road, Clayton, CA 94517",
+    "description": "Creek monitoring station MSH100"
+  },
+  "MSH110": {
+    "lat": 37.8904,
+    "lon": -121.84901,
+    "name": "Marsh Creek at 2103 Marsh Creek Road, Clayton, CA 94517",
+    "description": "Creek monitoring station MSH110"
+  },
+  "MSH120": {
+    "lat": 37.89272,
+    "lon": -121.85461,
+    "name": "Marsh Creek at 3240 Aspara Dr. Clayton, CA",
+    "description": "Creek monitoring station MSH120"
+  },
+  "MSH140": {
+    "lat": 37.866692,
+    "lon": -121.88184,
+    "name": "Marsh Creek at Curry Canyon Ranch",
+    "description": "Creek monitoring station MSH140"
+  },
+  "SPA129": {
+    "lat": 37.95559,
+    "lon": -122.27021,
+    "name": "Castro Creek directly downstream of Hillside Drive",
+    "description": "Creek monitoring station SPA129"
+  },
+  "WIL040": {
+    "lat": 37.96077,
+    "lon": -122.36312,
+    "name": "Wildcat Creek 4",
+    "description": "Creek monitoring station WIL040"
+  },
+  "WIL050": {
+    "lat": 37.962128,
+    "lon": -122.350965,
+    "name": "Wildcat Creek at Davis Park",
+    "description": "Creek monitoring station WIL050"
+  },
+  "WAL030": {
+    "lat": 37.9769,
+    "lon": -122.05262,
+    "name": "Walnut Creek at Six Flags Hurricane Harbor",
+    "description": "Creek monitoring station WAL030"
+  },
+  "SUP030": {
+    "lat": 37.97235,
+    "lon": -122.34352,
+    "name": "Rheem Creek at Wanlass park",
+    "description": "Creek monitoring station SUP030"
+  },
+  "ALH110": {
+    "lat": 37.9998,
+    "lon": -122.1302,
+    "name": "Alhambra Creek at end of F St. behind Martinez Adult Education",
+    "description": "Creek monitoring station ALH110"
+  },
+  "WIL070": {
+    "lat": 37.951974,
+    "lon": -122.319405,
+    "name": "Wildcat Creek at Alvarado Park",
+    "description": "Creek monitoring station WIL070"
+  },
+  "PIN020": {
+    "lat": 38.00417,
+    "lon": -122.28833,
+    "name": "Pinole Creek at Prune St",
+    "description": "Creek monitoring station PIN020"
+  },
+  "PIN040": {
+    "lat": 37.99917,
+    "lon": -122.28833,
+    "name": "Pinole Creek at Henry Ave",
+    "description": "Creek monitoring station PIN040"
+  },
+  "SPA210": {
+    "lat": 37.90417,
+    "lon": -122.1894,
+    "name": "Lauterwasser Creek at Lombardy Ln and Sleepy Hollow Ln",
+    "description": "Creek monitoring station SPA210"
+  },
+  "SPA231": {
+    "lat": 37.87907,
+    "lon": -122.18115,
+    "name": "San Pablo Creek directly below intersection by effluent tube running under Moraga Way",
+    "description": "Creek monitoring station SPA231"
+  },
+  "WIL060": {
+    "lat": 37.95325,
+    "lon": -122.33863,
+    "name": "Wildcat Creek at Vale Road Bridge",
+    "description": "Creek monitoring station WIL060"
+  },
+  "WAL080": {
+    "lat": 37.903903,
+    "lon": -122.05927,
+    "name": "Walnut Creek at Civic Park",
+    "description": "Creek monitoring station WAL080"
   }
 }
